@@ -39,40 +39,40 @@
 
 .marquee-sign {
   background-color: #000;
-  border: 10px solid #FFD700;
+  border: 10px solid #FFFACD; /* Lighter gold/white */
   border-radius: 15px;
   padding: 20px 40px;
-  box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700;
+  box-shadow: 0 0 20px #FFFACD, 0 0 30px #FFFACD, 0 0 40px #FFFACD; /* Lighter gold/white */
   animation: glow 1.5s ease-in-out infinite alternate;
 }
 
 .marquee-text {
   font-family: 'Arial Black', sans-serif;
-  color: #FF0000;
+  color: #FFE70B; /* Light royal blue */
   text-shadow: 
-    0 0 5px #FF0000,
-    0 0 10px #FF0000,
-    0 0 20px #FF0000,
-    0 0 40px #FF0000;
+    0 0 5px #FFE70B,
+    0 0 10px #FFE70B,
+    0 0 20px #FFE70B,
+    0 0 40px #FFE70B; /* Light royal blue */
   animation: flicker 0.5s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700;
+    box-shadow: 0 0 20px #FFFACD, 0 0 30px #FFFACD, 0 0 40px #FFFACD; /* Lighter gold/white */
   }
   to {
-    box-shadow: 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700;
+    box-shadow: 0 0 30px #FFFACD, 0 0 40px #FFFACD, 0 0 50px #FFFACD; /* Lighter gold/white */
   }
 }
 
 @keyframes flicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow:
-      0 0 5px #FF0000,
-      0 0 10px #FF0000,
-      0 0 20px #FF0000,
-      0 0 40px #FF0000;
+      0 0 5px #FFE70B,
+      0 0 10px #FFE70B,
+      0 0 20px #FFE70B,
+      0 0 40px #FFE70B; /* Light royal blue */
   }
   20%, 24%, 55% {
     text-shadow: none;
