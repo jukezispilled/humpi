@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.marquee-sign {
+  background-color: #000;
+  border: 10px solid #FFD700;
+  border-radius: 15px;
+  padding: 20px 40px;
+  box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.marquee-text {
+  font-family: 'Arial Black', sans-serif;
+  color: #FF0000;
+  text-shadow: 
+    0 0 5px #FF0000,
+    0 0 10px #FF0000,
+    0 0 20px #FF0000,
+    0 0 40px #FF0000;
+  animation: flicker 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700;
+  }
+  to {
+    box-shadow: 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700;
+  }
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 5px #FF0000,
+      0 0 10px #FF0000,
+      0 0 20px #FF0000,
+      0 0 40px #FF0000;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
