@@ -60,7 +60,7 @@ function App() {
       {isModalOpen && <Modal onClose={handleCloseModal} />}
       <div className={`h-full w-full relative flex justify-center items-center ${isModalOpen ? 'opacity-0' : 'opacity-100'}`}>
         <div className='marquee-sign -mt-[70%] md:-mt-[10%]'>
-          <div className='text-center font-bold text-[#FFFACD;] text-[8px] md:text-base'>CA: COMING SOON</div>
+          <div className='text-center font-bold text-[#FFFACD;] text-[8px] md:text-base'>CA: 7aZT74iJphfhymQQSmu6tZwLSjTifFYcFUi5jzT2y67M</div>
           <div className='marquee-text text-6xl md:text-8xl text-center'>HUMPI</div>
         </div>
         <div className='absolute top-5 left-5 flex justify-center items-center z-10'>
